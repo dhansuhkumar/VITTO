@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id                String   @id @default(uuid())
+  email             String   @unique
+  phone             String
+  institution_name  String
+  institution_type  String
+  city              String
+  loan_book_size    String
+  created_at        DateTime @default(now())
+  status            String   @default("pending")
+}
