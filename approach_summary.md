@@ -1,8 +1,10 @@
 # Vitto Internship Assignment: Approach & Summary
 
+**Live Frontend (Lovable):** [https://vitto-credit-connect.lovable.app](https://vitto-credit-connect.lovable.app)
+
 ## 1. Summary of Approach
 My approach focused on building an **AI-native ecosystem** rather than a traditional CRUD application. 
-- **Frontend:** Built with React (Vite) and Tailwind CSS, focusing on an institutional, high-performance aesthetic using a Dark Navy (#1A1A2E) and Red (#D32F2F) palette.
+- **Frontend Architecture:** Built with React (Vite) and Tailwind CSS on Lovable. It prioritizes an institutional, high-performance aesthetic using a Dark Navy (#1A1A2E) and Red (#D32F2F) palette.
 - **Backend Architecture:** A hybrid database approach was used to optimize for different data needs. PostgreSQL (managed via Prisma) serves as the primary system of record for leads, while MongoDB handles ephemeral OTP sessions with an automated 10-minute TTL (Time-To-Live) index for security and performance.
 - **Security:** Implemented JWT-based session handling and strict input validation via middleware.
 

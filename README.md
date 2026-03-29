@@ -2,6 +2,8 @@
 
 This is the backend for the Vitto Internship Task-2.
 
+**Live Frontend:** [https://vitto-credit-connect.lovable.app](https://vitto-credit-connect.lovable.app)
+
 ## Website Structure & Sitemap (Extra 15% Credits)
 - **Target Audience:** Mid-sized NBFCs, Banks, and MFIs looking for AI-native infrastructure.
 - **Conversion Goal:** Convert leads into demo requests within 24 hours.
@@ -10,6 +12,11 @@ This is the backend for the Vitto Internship Task-2.
     - `Platform Page`: Detailed view of the 6 AI Modules (Origination to Servicing).
     - `Automation Page`: Operational layers (Channels to CRM).
     - `Sign-up`: Multi-step onboard flow.
+
+## Approach Summary
+- **Frontend Architecture:** Built with React (Vite) and Tailwind CSS on Lovable. Focuses on an institutional, high-performance aesthetic using a Dark Navy (#1A1A2E) and Red (#D32F2F) palette.
+- **Backend Architecture:** A hybrid database approach was used to optimize for different data needs. PostgreSQL (managed via Prisma) serves as the primary system of record for leads, while MongoDB handles ephemeral OTP sessions with an automated 10-minute TTL (Time-To-Live) index for security and performance.
+- **Frontend URL:** [https://vitto-credit-connect.lovable.app](https://vitto-credit-connect.lovable.app)
 
 ## Tech Stack
 - **Node.js + Express**
